@@ -61,7 +61,9 @@ Besides, you can use a ground truth to evaluate the models. Put a CSV file with 
 
 ## Data used
 
-The complete database has been collected by the [LEEC lab](https://github.com/LEEClab) and subsets were used in other papers, such as [[1]](https://doi.org/10.1016/j.scitotenv.2019.135403), [[2]](https://doi.org/10.1016/j.ecolind.2020.107316), and [[3]](https://doi.org/10.3390/info12070265). Our subset is labeled with animal species and will be available on the [lab website](https://github.com/LEEClab) as soon as possible.
+The complete database has been collected by the [LEEC lab](https://github.com/LEEClab) and subsets were used in other papers, such as [[1]](https://doi.org/10.1016/j.ecolind.2020.107050), [[2]](https://doi.org/10.1016/j.ecolind.2020.107316), and [[3]](https://doi.org/10.3390/info12070265). Our subset is labeled with animal species and will be available on the [lab website](https://github.com/LEEClab) as soon as possible.
+
+
 
 ## Contact
 
