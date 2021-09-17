@@ -41,9 +41,9 @@ The main code has the following parameters:
 
 ## Running
 
-To **train** with your dataset, the generator looks for two directories inside the source path: train and validation. Inside these directories, put your spectrogram images and a CSV file with two columns: file and label related to your spectrograms.
+To **train** with your dataset, the generator looks for two directories inside the source path: train and validation. Inside these directories, put your spectrogram images and a CSV file with two columns: file and label related to your spectrograms. Data directory has examples of this files/structure.
 
-To **apply** our pre-trained models to your data, set target *-t* parameter with a directory that contains a model (one of the files inside our *model* directory) and set source *-s* parameter with your spectrograms directory. Code will generate a CSV with the predicted labels in the current path, considering the case 12-class (described in the paper).
+To **apply** our pre-trained models to your data, set target *-t* parameter with a directory that contains a model (inside *models* directory exists a link to Google Drive with our models) and set source *-s* parameter with your spectrograms directory. Code will generate a CSV with the predicted labels in the current path, considering the case 12-class (described in the paper).
 
 If you want other class scenarios (bird-class, anuran-class, or 2-class), just point to the specific model (see our *model* directory) and change the function utils.decode_labels, removing the commentary of your desired case.
 
@@ -52,18 +52,16 @@ Besides, you can use a ground truth to evaluate the models. Put a CSV file with 
 ## Examples
 
 ```python
-  python main.py -a apply -l 12 -m 6 -b 20 -quant -eval -s /home/user/Desktop/data/test/ -t /home/user/Desktop/model
+  python main.py -a apply -l 12 -m 6 -b 80 -quant -eval -s /home/user/Desktop/data/test/ -t /home/user/Desktop/model
 ```
 
 ```python
-  python main.py -a train -l 12 -m 18 -e 50 -b 20 -quant -s /home/user/Desktop/data/ -t /home/user/Desktop/model
+  python main.py -a train -l 12 -m 18 -e 50 -b 30 -quant -s /home/user/Desktop/data/ -t /home/user/Desktop/model
 ```  
 
 ## Data used
 
 The complete database has been collected by the [LEEC lab](https://github.com/LEEClab) and subsets were used in other papers, such as [[1]](https://doi.org/10.1016/j.ecolind.2020.107050), [[2]](https://doi.org/10.1016/j.ecolind.2020.107316), and [[3]](https://doi.org/10.3390/info12070265). Our subset is labeled with animal species and will be available on the [lab website](https://github.com/LEEClab) as soon as possible.
-
-
 
 ## Contact
 
