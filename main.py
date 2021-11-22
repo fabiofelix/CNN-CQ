@@ -17,7 +17,7 @@ def count_CC_loss(y_true, y_pred):
   y, idx, CC = tf.unique_with_counts(class_index)
 
 ##---------------------------------------------------#
-## y and CC must have all possible positions contained in y_pred
+## y and CC must have all possible positions contained in y_true
 ##---------------------------------------------------#
 ##Possible indices
   true_index = tf.range(y_pred.shape[1], dtype = y.dtype)
